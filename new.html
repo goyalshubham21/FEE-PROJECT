@@ -1,0 +1,42 @@
+<!-- Apply a 1 second transition to the width property of the div one. Apply
+also a 1 second transition to the width property of the div two, but make
+sure the animation starts only after the div one has stopped. (hint: use delay) -->
+
+<html>
+  <head>
+    <style>
+      .sq1 {
+        width: 100px;
+        height: 100px;
+        background: green;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+      }
+
+      .sq2 {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        transition-delay: 1s;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+      }
+
+      #main:hover .sq1 {
+        width: 300px;
+      }
+      #main:hover .sq2 {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="sq1"></div>
+      <br />
+      <div class="sq2"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head></head>
+
+<body>
+
+<center><h1> This is my form</h1> </center>
+<form >
+<fieldset>
+<legend>Personal Info</legend>
+<label>First Name: <input type="text" name="fname" size="30" required></label><br>
+<label>Last Name: <input type="text" name="lname" size="30"></label>
+</fieldset>
+<hr color="red">
+<fieldset>
+<legend>Course Info</legend>
+<label>Course:</label><br>
+<input type="radio" name="course" value="webdesign"> Web Design<br>
+<input type="radio" name="course" value="sql" checked> SQL<br>
+<input type="radio" name="course" value="programming"> Programming<br>
+<label>Career Goal:</label><br>
+<select name="goal">
+<option>Web Designer</option>
+<option>Database Administrator</option>
+<option selected>Programmer</option>
+<option>other</option>
+</select>
+<br>
+<br>
+<label>Describe any additional skills you have:</label><br>
+<textarea name="skills" cols="70" rows="4"> </textarea><br>
+Email: <input type="email"></textarea>
+</fieldset>
+<hr color="red">
+<br>
+For how long would you like to work with us<br>
+<input type="checkbox" name="c1"> 1 year <br>
+<input type="checkbox" name="c2" checked> Seasonal Work<br>
+<button type="submit">Enter my information</button> &nbsp
+<input type="reset" value="Reset Form">
+</form>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="fee.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+                <span id="cart-count">0</span>
+                <div id="cart-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeCartModal">&times;</span>
+                        <h2>Your Cart</h2>
+                        <ul id="cart-items"></ul>
+                        <p>Total: <span id="cart-total">₹ 0</span></p>
+                        <button class="btn btn-primary" onclick="checkout()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Category</a></li>
+                <li><a href="#food-menu">Menu</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="open-cart">Cart</a></li>
+
+            </ul>
+            <h1 class="logo">FOODIE</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Eat Right Food</h1>
+            <p>Eat Healthy, it is good for our health.</p>
+            <a href="#food-menu" class="btn btn-primary">Menu</a>
+        </div>
+    </section>
+
+    </head>
+
+    <body>
+
+        <section id="about">
+            <div class="about-wrapper container">
+                <div class="about-text">
+                    <p class="small">About Us</p>
+                    <h2>We've been making healthy food last for 10 years</h2>
+                    <p>
+                        Welcome to our culinary haven, where every dish is a symphony of flavors crafted with passion
+                        and precision. At our restaurant, we take pride in delivering an unparalleled dining experience
+                        that tantalizes the taste buds and leaves a lasting impression. From sizzling starters to
+                        decadent desserts, our menu is a celebration of diverse cuisines, prepared with the finest
+                        ingredients to ensure a memorable gastronomic journey. Join us for an exquisite blend of
+                        delectable dishes, warm hospitality, and a vibrant ambiance, making every visit a feast for the
+                        senses. Indulge in the art of dining at our restaurant, where each plate tells a story, and
+                        every meal is a culinary masterpiece
+                    </p>
+                </div>
+                <div class="about-img">
+                    <img src="https://i.postimg.cc/mgpwzmx9/about-photo.jpg" alt="Food" />
+                </div>
+            </div>
+        </section>
+        <section id="food">
+            <h2>Types of food</h2>
+            <div class="food-container container">
+                <div class="food-type fruite">
+                    <div class="img-container">
+                        <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="error" />
+                        <div class="img-content">
+                            <h3>fruit</h3>
+                            <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="blank">learn
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-type vegetable">
+                    <div class="img-container">
+                        <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="error" />
+                        <div class="img-content">
+                            <h3>vegetable</h3>
+                            <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary"
+                                target="blank">learn
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-type grin">
+                    <div class="img-container">
+                        <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="error" />
+                        <div class="img-content">
+                            <h3>grain</h3>
+                            <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="blank">learn
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="food-menu">
+            <h2 class="food-menu-heading">Food Menu</h2>
+            <div class="food-menu-container container">
+                <div class="food-menu-item">
+                    <!-- Inside the food-menu-item div for each menu item -->
+                    <div class="food-menu-item">
+
+                        <div class="food-img">
+                            <img src="https://poshjournal.com/wp-content/uploads/2017/07/iced-coffee-mocha-homemade-chocolate-syrup-american-press-13-1080x1714.jpg"
+                                alt="" />
+                        </div>
+                        <div class="food-description">
+                            <h2 class="food-title">Mocha Choco Chip</h2>
+                            <p>
+                                Latte with chocolate and cookie crumble
+                            </p>
+                            <p class="food-price">Price: ₹ 250</p>
+                            <button class="btn btn-primary add-to-cart-btn" data-item-name="Mocha Choco Chip"
+                                data-item-price="250">Add to Cart</button>
+                            <select class="form-control qty" id="quantity" name="quantity">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://bakingmischief.com/wp-content/uploads/2019/10/easy-caramel-latte-feature.jpg"
+                            alt="error" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Caramel Latte</h2>
+                        <p>
+                            latte with rich caramel
+                        </p>
+                        <p class="food-price">Price: &#8377; 240</p>
+                        <button class="btn btn-primary add-to-cart-btn" onclick="addToCart('Caramel Latte', 240)">Add to
+                            Cart</button>
+                        <select class="form-control qty" id="quantity" name="quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/07/cream-cheese-sandwich-recipe-1-500x500.jpg"
+                            alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Cheese Grilled Sandwich</h2>
+                        <p>
+                            New York Style with Pure Cream Cheese
+                        </p>
+                        <p class="food-price">Price: &#8377; 200</p>
+                        <button class="btn btn-primary add-to-cart-btn"
+                            onclick="addToCart('Cheese Grilled Sandwich', 200)">Add to Cart</button>
+                        <select class="form-control qty" id="quantity" name="quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://static.toiimg.com/thumb/60043279.cms?width=1200&height=900" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Paneer Sandwich</h2>
+                        <p>
+                            Spiced paneer and mozzarella cheese in panini bread
+                        </p>
+                        <p class="food-price">Price: &#8377; 250</p>
+                        <button class="btn btn-primary add-to-cart-btn" onclick="addToCart('Paneer Sandwich', 250)">Add
+                            to Cart</button>
+                        <select class="form-control qty" id="quantity" name="quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://i.ytimg.com/vi/VbSCb1vZ0eI/maxresdefault.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Veg Pasta</h2>
+                        <p>
+                            Alfredo pesto
+                        </p>
+                        <p class="food-price">Price: &#8377; 300</p>
+                        <button class="btn btn-primary add-to-cart-btn" onclick="addToCart('Veg Pasta', 300)">Add to
+                            Cart</button>
+                        <select class="form-control qty" id="quantity" name="quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://insanelygoodrecipes.com/wp-content/uploads/2021/11/Classic-American-Cobb-Salad-with-Tomatoes-Avocados-Eggs-Chicken-and-Bacons.jpg"
+                            alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Keto Salad</h2>
+                        <p>
+                            veggies,ketogenic salad with lettuce
+                        </p>
+                        <p class="food-price">Price: &#8377; 250</p>
+                        <button class="btn btn-primary add-to-cart-btn" onclick="addToCart('Keto Salad', 250)">Add to
+                            Cart</button>
+                        <select class="form-control qty" id="quantity" name="quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2 class="testimonial-title">What Our Customers Say</h2>
+
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="photo_6305127310856140950_y.jpg" alt="" />
+                        <p class="customer-name">Shubham</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    Best Food regular Customer from last 4 years!
+                </p>
+                <div class="testimonial-box">
+                    <div class="customer-detail">
+                        <div class="customer-photo">
+                            <img src="photo_6305127310856140949_y.jpg" alt="" />
+                            <p class="customer-name">Shruti</p>
+                        </div>
+                    </div>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="testimonial-text">
+                        Tasty food & Genuine prices!
+                    </p>
+                    <div class="testimonial-box">
+                        <div class="customer-detail">
+                            <div class="customer-photo">
+                                <img src="photo_6305127310856140948_x.jpg" alt="" />
+                                <p class="customer-name">Shreeya</p>
+                            </div>
+                        </div>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <p class="testimonial-text">
+                            awesome taste with best coffee!
+                        </p>
+
+                    </div>
+                </div>
+        </section>
+        <section id="contact">
+            <div class="contact-container container">
+                <div class="contact-img">
+                    <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="Restaurant Image" />
+                </div>
+
+                <div class="form-container">
+                    <h2>Contact Us</h2>
+                    <input type="text" placeholder="Your Name" />
+                    <input type="email" placeholder="E-Mail" />
+                    <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+                    <a href="#" class="btn btn-primary">Submit</a>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <h2>Restaurant &copy; all rights reserved</h2>
+        </footer>
+        </div>
+        </div>
+
+    </body>
+
+</html>

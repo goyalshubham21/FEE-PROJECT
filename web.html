@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            padding: 20px;
+        }
+
+        .column {
+            flex: 50%;
+            padding: 10px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            margin: 20px;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Resturent</h1>
+    <p>Welcome to our Resturent!</p>
+</div>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h3>Pizza</h3>
+            <p class="price">$10</p>
+            <p>Some text about the dish..</p>
+            <a href="#" class="button">Order Now</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <h3>Burger</h3>
+            <p class="price">$12</p>
+            <p>Some text about the dish..</p>
+            <a href="#" class="button">Order Now</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

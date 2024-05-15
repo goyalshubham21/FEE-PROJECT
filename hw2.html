@@ -1,0 +1,86 @@
+<html>
+<style>
+table {
+  width: 100%;
+}
+textarea{
+ width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: yellow;
+}
+</style>
+<body>
+<h2><center>Registration For Data Science Workshop</center></h2>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Register for Web Designing Workshop</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="write your first name  
+here"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="write your last name  
+here"><br><br> 
+    <label for="week">Select a week for workshop:</label>
+  <input type="week" id="week" name="week">
+  <br>
+
+</head>
+<body>
+
+<h2>Time table of Workshop</h2>
+
+<table>
+  <tr>
+    <th>Topic</th>
+    <th>Instructor</th>
+    <th>Timing</th>
+  </tr>
+  <tr>
+    <td><ol type="I" start="51">
+  <li>Statistics</li>
+  <li>Linear Algebra</li> 
+</ol></td>
+    <td>Jerry</td>
+   <td>
+  <label for="appt">Monday Time:</label>
+  <input type="time" id="appt" name="appt">
+</td>
+  </tr>
+  <tr>
+    <td><ul style="list-style-type:circle;">
+  <li>Programming</li>
+  <li>Machine Learning</li>
+</ul></td>
+    <td>Tom</td>
+    <td><label for="wdaymonth">Select Month and Year</label>
+  <input type="month" id="wdaymonth" name="wdaymonth"></td>
+  </tr>
+  <tr>
+    <td><font size="7"> <dl>
+  <dt>Data mining</dt>
+  <dd>- examining large pre-existing databases </dd>
+  <dt>Data Visualization</dt>
+  <dd>- representation of information and data</dd>
+</dl></td>
+    <td>Rolando</td>
+    <td><label for="aippt">Thursday Time:</label>
+  <input type="time" id="aippt" name="aippt"></td>
+  </tr>
+  
+</table><h3>Suggestion:</h3>
+  <textarea name="message" >Type your suggestions here</textarea><br>
+  <input type="submit" value="Submit">
+  </fieldset>
+  </form>
+
+</body>
+</html>
